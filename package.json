@@ -1,0 +1,47 @@
+{
+  "name": "givault",
+  "version": "1.0.0",
+  "private": true,
+  "description": "website for people to find chesed opportunities on",
+  "main": "app/server.js",
+  "scripts": {
+    "webpack-watch": "webpack -w",
+    "express-server": "nodemon ./app/server",
+    "dev": "concurrent --kill-others \"npm run webpack-watch\" \"npm run express-server\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielblinick/givalt.git"
+  },
+  "author": "Naomi Tori, Daniel Blinick",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danielblinick/givalt/issues"
+  },
+  "homepage": "https://github.com/danielblinick/givalt#readme",
+  "dependencies": {
+    "babel-core": "^6.17.0",
+    "babel-loader": "^6.2.0",
+    "babel-plugin-add-module-exports": "^0.1.2",
+    "babel-plugin-react-html-attrs": "^2.0.0",
+    "babel-plugin-transform-class-properties": "^6.19.0",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-plugin-transform-runtime": "^6.15.0",
+    "babel-polyfill": "^6.16.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-react": "^6.16.0",
+    "babel-preset-stage-0": "^6.16.0",
+    "babel-register": "^6.18.0",
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "react": "^0.14.6",
+    "react-dom": "^0.14.6",
+    "webpack": "^1.13.3",
+    "webpack-dev-server": "^1.14.1"
+  },
+  "devDependencies": {
+    "concurrently": "^3.1.0",
+    "nodemon": "^1.11.0"
+  }
+}
