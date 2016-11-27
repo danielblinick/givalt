@@ -1,9 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+import NavBar from "./components/NavBar";
+
 const app = document.getElementById('app');
 ReactDOM.render( 
-	<div class="jumbotron">
-		<h1>Hello, world!</h1>
+	<div>
+		<NavBar></NavBar>
 	</div>, 
 app);
