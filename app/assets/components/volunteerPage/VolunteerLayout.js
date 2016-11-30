@@ -1,11 +1,12 @@
 import React from 'react';
 
-import Calendar from "./Calendar";
+import Calendar from "./Calendar/Calendar";
+import styles from "./volunteerPage.scss"
 
 export default class VolunteerLayout extends React.Component {
 	render() {
 		return (
-			<div>
+			<div id='container'>
 				<Calendar></Calendar>
 			</div>
 			);

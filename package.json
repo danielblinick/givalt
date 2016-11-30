@@ -38,6 +38,7 @@
     "mobx": "^2.6.3",
     "mobx-react": "^4.0.2",
     "moment": "^2.17.0",
+    "node-sass": "^3.13.0",
     "react": "^0.14.6",
     "react-big-calendar": "^0.11.1",
     "react-dom": "^0.14.6",
@@ -47,6 +48,9 @@
   },
   "devDependencies": {
     "concurrently": "^3.1.0",
-    "nodemon": "^1.11.0"
+    "css-loader": "^0.26.0",
+    "nodemon": "^1.11.0",
+    "sass-loader": "^4.0.2",
+    "style-loader": "^0.13.1"
   }
 }

@@ -5,7 +5,7 @@ var path = require('path');
 module.exports = {
   context: path.join(__dirname, "app"),
   devtool: debug ? "inline-sourcemap" : null,
-  entry: "./public/javascript/client.js",
+  entry: "./assets/client.js",
   module: {
     loaders: [
       {
@@ -16,11 +16,19 @@ module.exports = {
           presets: ['react', 'es2015', 'stage-0'],
           plugins: ['react-html-attrs', 'transform-decorators-legacy', 'transform-class-properties'],
         }
+      },
+      {
+          test: /\.scss$/,
+          loaders: ['style', 'css', 'sass']
+      },
+      {
+          test: /\.css$/,
+          loaders: ['style', 'css']
       }
     ]
   },
   output: {
-    path: __dirname + "/app/public/",
+    path: __dirname + "/app/assets/",
     filename: "client.min.js"
   },
   plugins: debug ? [] : [
